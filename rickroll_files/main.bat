@@ -1,5 +1,8 @@
 powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/mil35i5/ducky_rickroll/main/rickroll_files/rickroll.mp4 -OutFile rickroll.mp4
 timeout /t 0.2
+while(true){
 start rickroll.mp4
 timeout /t 0.2
 powershell $wshell = New-Object -ComObject wscript.shell;$wshell.SendKeys('{F11}')
+timeout /t 30
+}
